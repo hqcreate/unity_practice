@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/NNJScene/Feedback.unity
+    guid: add46bda80965b1459fe0c0937be74b6
+  - enabled: 1
+    path: Assets/NNJScene/PlayerName.unity
+    guid: e6d2c01da10992d41ac11edd8cbaa777
+  - enabled: 1
+    path: Assets/NNJScene/Settings.unity
+    guid: 3911b6daa55448946b1f380acf6d4802
+  - enabled: 1
+    path: Assets/NNJScene/StageSelect.unity
+    guid: 5c002a9096530e04faed197fbdd3e0a0
+  - enabled: 1
+    path: Assets/NNJScene/Title.unity
+    guid: f6daa42f8c68b7f4eb2e59f821dff72a
   m_configObjects: {}
