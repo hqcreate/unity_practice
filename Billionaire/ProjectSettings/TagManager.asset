@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - wall
+  - ene_sp
+  - ppap
   layers:
   - Default
   - TransparentFX

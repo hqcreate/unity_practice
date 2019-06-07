@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3905443002149051449}
   - component: {fileID: 3905443002149051448}
   - component: {fileID: 3905443002149051447}
-  - component: {fileID: 3905443002149051446}
+  - component: {fileID: 4732512940287998475}
   m_Layer: 0
   m_Name: Enemypat
   m_TagString: Enemy
@@ -100,7 +100,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3905443002149051446
+--- !u!114 &4732512940287998475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,8 +109,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3905443002149051445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a84405f0f7d26f47aefb1ad6d6ccc4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 293d9e31f1fee3741b1744ba7ae6f0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SPEED_para: {x: 2, y: 2}
-  random_para: 20
+  SPEED_para: {x: 0, y: 0}
+  stage_data: 000000000000000001111111111100000100011100011100010101110101110001000111010111100111110001000010000001011111101001111010111111001110001100111000111011111011010010001111111101001111111110010100111010110111110011101001011111000010111111111100000000000000000
+  stage_height_half: 8
+  stage_width_half: 8
+  speed_para: 1

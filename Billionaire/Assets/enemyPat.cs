@@ -38,7 +38,7 @@ public class enemyPat : MonoBehaviour
             case 1:
                 SPEED.x = -1 * SPEED_para.x;
                 SPEED.y = 0f;
-                animator.Play("leftwalk");
+                animator.Play("Enemy Leftwalk");
                 break;
             case 2:
                 SPEED.x = 0f;
