@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     Animator animator;
     private Vector2 SPEED = new Vector2();
     public Vector2 SPEED_para = new Vector2();
-    
+    private int angle = 2;
     private float counting = 0;
 
     void Start()
@@ -21,39 +21,61 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey("d"))
         {
-
-
             SPEED.x = SPEED_para.x;
             SPEED.y = 0;
-            animator.Play("rightwalk");
+            animator.Play("player rightwalk");
+            angle = 1;
         }
         else if (Input.GetKey("a"))
         {
 
             SPEED.x = -1 * SPEED_para.x;
             SPEED.y = 0f;
-            animator.Play("leftwalk");
+            animator.Play("player leftwalk");
+            angle = 3;
         }
         else if (Input.GetKey("w"))
         {
 
             SPEED.x = 0f;
             SPEED.y = SPEED_para.y;
-            animator.Play("backwalk");
+            animator.Play("player backwalk");
+            angle = 2;
         }
         else if (Input.GetKey("s"))
         {
 
             SPEED.x = 0f;
             SPEED.y = -1 * SPEED_para.y;
-            animator.Play("walk");
+            animator.Play("player walk");
+            angle = 0;
+        }
+        else
+        {
+            SPEED.x = 0f;
+            SPEED.y = 0f;
+            switch (angle)
+            {
+                case 0:
+                    animator.Play("Enemy Backidle");
+                    break;
+                case 1:
+                    animator.Play("Enemy Rightidle");
+                    break;
+                case 2:
+                    animator.Play("Enemy Idle");
+                    break;
+                case 3:
+                    animator.Play("Enemy Leftidle");
+                    break;
+            }
         }
                 
         Vector2 Position = transform.position;
         Position.y += SPEED.y * Time.deltaTime;
         Position.x += SPEED.x * Time.deltaTime;
+        transform.position = Position;
 
-        Move();
 
     }
 
@@ -105,7 +127,6 @@ public class Player : MonoBehaviour
 
         // 現在の位置に加算減算を行ったPositionを代入する
 
-        transform.position = Position;
 
     }
 

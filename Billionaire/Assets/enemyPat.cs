@@ -14,7 +14,7 @@ public class enemyPat : MonoBehaviour
     void Start()
     {
         animator = GetComponent(typeof(Animator)) as Animator;
-        animator.Play("Enemy Idle");
+        
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class enemyPat : MonoBehaviour
             case 0:
                 SPEED.x = SPEED_para.x;
                 SPEED.y = 0;
-                animator.Play("rightwalk");
+                animator.Play("Enemy Rightwalk");
                 break;
             case 1:
                 SPEED.x = -1 * SPEED_para.x;
